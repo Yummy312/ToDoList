@@ -4,28 +4,26 @@ ToDo приложение - это простое веб-приложение д
 
 1. Клонируйте репозиторий на ваш локальный компьютер:
 ```shell
-git clone 
+git clone https://github.com/Yummy312/ToDoList.git
 ```
 
-2. Перейдите в каталог проекта:
-```shell
-cd ToDo
-```
-
-3. Установите зависимости:
+2. Установите зависимости:
 
 ```shell
 pip install -r requirements.txt
 ```
 
-4. Примените миграции:
-```shell
-python manage.py migrate
-```
-затем
+3. Примените миграции:
+
 ```shell
 python manage.py makemigrations
 ```
+затем
+
+```shell
+python manage.py migrate
+```
+
 
 ## Использование
 
