@@ -7,14 +7,12 @@ from .serializers import TaskSerializer
 @api_view(['GET'])
 def get_task(request, pk):
     task = get_object_or_404(Task, pk=pk)
-    print('ssssssssssssss',task)
     serializer = TaskSerializer(task)
     return Response(serializer.data)
 
 @api_view(['GET'])
 def get_list_tasks(request):
     tasks = Task.objects.all()
-    print('sssssssssssrrrrr', tasks)
     serializer = TaskSerializer(tasks, many=True)
     return Response(data=serializer.data)
 
